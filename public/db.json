@@ -1,14 +1,12 @@
-{
-  "feedback": [
-    {
-      "text": "I think this was an excellent course!!!!",
-      "rating": 9,
-      "id": "693b"
-    },
-    {
-      "text": "This is a marvellous course!!!!",
-      "rating": 9,
-      "id": "1036"
-    }
-  ]
-}
+[
+  {
+    "text": "I think this was an excellent course!!!!",
+    "rating": 9,
+    "id": "693b"
+  },
+  {
+    "text": "This is a marvellous course!!!!",
+    "rating": 9,
+    "id": "1036"
+  }
+]
