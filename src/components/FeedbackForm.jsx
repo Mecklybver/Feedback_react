@@ -8,6 +8,8 @@ function FeedbackForm() {
   const { addFeedback, feedbackEdit, updateFeedback } =
     useContext(FeedbackContext);
 
+
+
   useEffect(() => {
     if (feedbackEdit.edit === true) {
       setbtnDisable(false);
@@ -59,7 +61,7 @@ function FeedbackForm() {
   };
 
   return (
-    <Card>
+    <Card reverse={feedbackEdit.edit}>
       <form onSubmit={handleSubmit}>
         <h2>How would you rate your service with us?</h2>
         <RatingSelect select={(rating) => setRating(rating)} />
@@ -70,7 +72,7 @@ function FeedbackForm() {
             onChange={handleChange}
             value={text}
           />
-          <Button type="submit" isDisabled={btnDisable}>
+          <Button type="submit" isDisabled={btnDisable} >
             Send
           </Button>
         </div>

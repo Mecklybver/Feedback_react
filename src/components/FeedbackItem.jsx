@@ -8,11 +8,11 @@ function FeedbackItem({ item: { id, rating, text }, item }) {
     useContext(FeedbackContext);
 
   // to change style when editing
-  // const isEditing = feedbackEdit.edit && feedbackEdit.item.id === id;
+  const isEditing = feedbackEdit.edit && feedbackEdit.item.id === id;
 
 
   return (
-    <Card className="card" reverse={false}  >
+    <Card className="card" reverse={isEditing}  >
       <div className="num-display">{rating}</div>
       <button className="close" onClick={() => deleteFeedback(id)}>
         <FaTimes color="purple" />
